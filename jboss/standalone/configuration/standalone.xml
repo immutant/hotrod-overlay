@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server xmlns="urn:jboss:domain:1.4">
+    <extensions>
+        <extension module="org.infinispan.server.endpoint"/>
+    </extensions>
+    <profile>
+        <subsystem xmlns="urn:infinispan:server:endpoint:5.3">
+            <hotrod-connector socket-binding="hotrod" cache-container="polyglot">
+                <topology-state-transfer lazy-retrieval="false" lock-timeout="1000" replication-timeout="5000"/>
+            </hotrod-connector>
+        </subsystem>
+        <subsystem xmlns="urn:jboss:domain:infinispan:1.4">
+            <cache-container name="polyglot">
+                <local-cache name="datomic" batching="true">
+                    <file-store/>
+                </local-cache>
+            </cache-container>
+        </subsystem>
+    </profile>
+    <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
+        <socket-binding name="hotrod" port="11222"/>
+    </socket-binding-group>
+</server>
