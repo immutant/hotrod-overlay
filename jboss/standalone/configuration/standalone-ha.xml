@@ -12,7 +12,7 @@
         <subsystem xmlns="urn:jboss:domain:infinispan:1.4">
             <cache-container name="polyglot">
                 <distributed-cache name="datomic" mode="SYNC" batching="true">
-                    <file-store passivation='false' purge='false'/>
+                    <file-store passivation='false' purge='false' preload='true'/>
                 </distributed-cache>
             </cache-container>
         </subsystem>
