@@ -14,7 +14,7 @@
    <main-class name="org.jboss.as.server.Main" />
 
    <resources>
-      <resource-root path="infinispan-server-endpoints-5.3.0.Final.jar"/>
+      <resource-root path="infinispan-server-endpoints-6.0.0.CR1.jar"/>
         <!-- Insert resources here -->
    </resources>
 
@@ -24,8 +24,8 @@
       <module name="javax.xml.bind.api" />
       <module name="org.apache.xerces" services="import" />
       <module name="org.infinispan" />
-      <module name="org.infinispan.cachestore.jdbc" />
-      <module name="org.infinispan.cachestore.remote" />
+      <module name="org.infinispan.persistence.jdbc" />
+      <module name="org.infinispan.persistence.remote" />
       <module name="org.infinispan.server" />
       <module name="org.infinispan.server.hotrod" />
       <module name="org.infinispan.server.memcached" />

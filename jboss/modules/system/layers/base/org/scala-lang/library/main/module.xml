@@ -18,8 +18,8 @@
    ~ 02110-1301 USA
 -->
 <module xmlns="urn:jboss:module:1.1" name="org.scala-lang.library">
-   <resources>
-      <resource-root path="scala-library-2.10.0.jar"/>
+    <resources>
+       <resource-root path="scala-library-2.10.2.jar"/>
         <!-- Insert resources here -->
    </resources>
 
