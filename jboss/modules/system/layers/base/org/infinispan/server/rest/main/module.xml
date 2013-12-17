@@ -23,7 +23,7 @@
    </properties>
 
    <resources>
-      <resource-root path="infinispan-server-rest-6.0.0.CR1-classes.jar"/>
+      <resource-root path="infinispan-server-rest-6.0.0.Final-classes.jar"/>
         <!-- Insert resources here -->
    </resources>
 
