@@ -21,8 +21,8 @@
     <resources>
        <resource-root path="scala-library-2.10.2.jar"/>
         <!-- Insert resources here -->
-   </resources>
+    </resources>
 
-   <dependencies>
-   </dependencies>
+    <dependencies>
+    </dependencies>
 </module>

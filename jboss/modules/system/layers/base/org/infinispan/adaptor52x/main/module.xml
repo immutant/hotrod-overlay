@@ -6,7 +6,7 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-adaptor52x-6.0.0.CR1.jar"/>
+        <resource-root path="infinispan-adaptor52x-6.0.0.Final.jar"/>
         <!-- Insert resources here -->
     </resources>
 
