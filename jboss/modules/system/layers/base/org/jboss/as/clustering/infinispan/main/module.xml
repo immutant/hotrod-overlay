@@ -40,16 +40,17 @@
       <module name="org.infinispan.persistence.jdbc"/>
       <module name="org.infinispan.persistence.leveldb"/>
       <module name="org.infinispan.persistence.remote" services="import"/>
-      <module name="org.infinispan.persistence.rest" services="import"/>
+      <!-- <module name="org.infinispan.persistence.rest" services="import"/> -->
       <module name="org.infinispan.adaptor52x"/>
       <module name="org.infinispan.hotrod.client" optional="true"/>
       <module name="org.infinispan.cli.server" services="import" optional="true"/>
       <module name="org.infinispan.server" services="import"/>
       <module name="org.infinispan.server.hotrod" services="import"/>
       <module name="org.infinispan.server.memcached" services="import"/>
-      <module name="org.infinispan.server.rest" services="import"/>
+      <!-- <module name="org.infinispan.server.rest" services="import"/> -->
       <module name="org.infinispan.query" services="import" optional="true"/>
       <module name="org.infinispan.remote-query.server" services="import" optional="true"/>
+      <module name="org.jboss.as.clustering.api"/>
       <module name="org.jboss.as.clustering.common"/>
       <module name="org.jboss.as.clustering.impl"/>
       <module name="org.jboss.as.clustering.jgroups" optional="true"/>
